@@ -1,6 +1,9 @@
 # Quasar App (shopify-project)
 
-A Quasar Framework app
+## link:
+
+ https://shop-web-87cda.web.app
+
 
 ## Install the dependencies
 ```bash
