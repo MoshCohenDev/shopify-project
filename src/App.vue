@@ -11,7 +11,8 @@ export default {
     ...mapActions('auth', ['handleAuthStateChange']),
   },
   mounted() {
-    this.handleAuthStateChange()
+    // this.handleAuthStateChange()
+    this.$router.push('/')
   }
 }
 </script>

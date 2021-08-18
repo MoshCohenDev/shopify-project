@@ -23,10 +23,8 @@ export default {
   data() {
     return {
       columns: [
-
         {name: 'name', required: true, label: 'Order number', align: 'center',
-          field: row => row.orderNumber, sortable: true
-        },
+          field: row => row.orderNumber, sortable: true},
         {name: 'full name', align: 'center', label: 'Full Name', field: row => row.fullName, sortable: true},
         {name: 'Order Date', align: 'center', label: 'Order Date', field: row => row.orderDate,
           format:val=>val=date.formatDate(val,'D/MM/YY')},

@@ -16,12 +16,11 @@ app.get('/api/orders', async (req, res) => {
     const data = await request.data
     res.json(data);
     console.log(data)
-    // console.log(data.orders[0].line_items)
   } catch (e) {
     console.log(e)
   }
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`listening at http://localhost:${port}`)
 })

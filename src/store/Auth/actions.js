@@ -11,7 +11,7 @@ export default {
     (payload.email, payload.password)
       .then(response => {
         console.log('response', response.user.uid)
-        this.$router.push('/home')
+        this.$router.push('/')
       })
       .catch(error => {
         showErrorMessage(error.message)
@@ -21,7 +21,6 @@ export default {
     Loading.show()
     firebaseAuth.signInWithEmailAndPassword(payload.email, payload.password)
       .then(response => {
-        // this.$router.push('/home')
         console.log('response', response.user.uid)
       })
       .catch(error => {
@@ -47,7 +46,7 @@ export default {
 
         }
         commit('setLoggedIn', true)
-        this.$router.push('/home').catch(err => {
+        this.$router.push('/').catch(err => {
         })
         //   dispatch('posts/getPosts', null, {root: true})
       } else {

@@ -5,12 +5,11 @@
         <q-btn
           icon="person"
           flat
-          to="/"
+          to="/auth"
           class="text-weight-bold btn"
           outline label="כניסה"/>
         <q-btn
-          to="/home"
-          v-if="loggedIn"
+          to="/"
           flat size="lg" icon="home"/>
       </q-toolbar>
     </q-header>
@@ -28,9 +27,6 @@ export default {
   data() {
     return {}
   },
-  computed: {
-    ...mapState('auth', ['loggedIn'])
-  }
 
 }
 </script>

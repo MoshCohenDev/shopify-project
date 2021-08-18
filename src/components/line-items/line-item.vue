@@ -36,13 +36,7 @@ export default {
   computed: {
     ...mapState('orders', ['lineItems', 'ordersNumber'])
   },
-  methods: {
-    ...mapActions('orders', ['cleanDataLineItems'])
-  },
-  unmounted() {
-    this.cleanDataLineItems()
-    this.$router.push('/home')
-  },
+
 }
 </script>
 

@@ -7,10 +7,17 @@
 
 <script>
 import LineItems from "components/line-items/line-item";
+import {mapActions} from "vuex";
 
 export default {
   name: "LineItemsPage",
   components: {LineItems},
+  methods: {
+    ...mapActions('orders', ['cleanDataLineItems'])
+  },
+  unmounted() {
+    this.cleanDataLineItems()
+  },
 }
 </script>
 
