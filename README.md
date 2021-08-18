@@ -1,4 +1,4 @@
-# Quasar App (shopift-test)
+# Quasar App (shopify-project)
 
 A Quasar Framework app
 
@@ -6,17 +6,17 @@ A Quasar Framework app
 ```bash
 npm install
 ```
+###  Start the server 
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+src/middleware/server.js
 ```bash
+node server.js
+```
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
+
 quasar dev
 ```
+## description
 
+The project was written in vue -quasar, to extract the data I used nodejs, and the data was saved in the firebase firestore database.
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v2.quasar.dev/quasar-cli/quasar-conf-js).
