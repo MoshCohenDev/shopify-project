@@ -1,7 +1,6 @@
 <template>
   <div class="q-pa-lg">
     <q-table
-      style="height: 400px;min-width: 400px;"
       class="my-sticky-dynamic q-pa-md text-weight-bold"
       :rows="orders"
       :columns="columns"
